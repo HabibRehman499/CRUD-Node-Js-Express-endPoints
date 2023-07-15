@@ -3,8 +3,10 @@ import mongoose from "mongoose";
 import router from "./router/router.js";
 import studentRouter from "./router/studentRouter.js";
 import logger from "morgan";
+import cors from 'cors'
 
 const app = express();
+app.use(cors());
 
 const port = process.env.port || 3000;
 
